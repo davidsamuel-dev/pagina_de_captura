@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+.title {
+    font-size: 20px;
+}
+
+.container {
+    box-shadow: 1px 1px 9px 5px #000;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+
+    background-color: #48C5CE;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav {
+    background-color: #000;
+    border-bottom: 1px solid #48C5CE;
+}
+
+nav ul,
+li {
+    color: #ffffff;
+    list-style: none;
+    display: block;
+    text-align: right;
+
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #ffffff;
+}
+
+li {
+    margin-left: 6px;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.formcontainer {
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+}
+
+section {
+    padding: 20px;
+    background-image: url(./image/people.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    background-color: #48C5CE;
+    color: #fff;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url(./image/arrow.jpg);
+    background-repeat: no-repeat;
+
+    background-position: calc(100% - 10px) center;
+}
+
+footer {
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture {
+    width: 160px;
+
+}
+
+.description {
+    display: inline-block;
+    color: #fff;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.description p,
+.description h3 {
+    margin-bottom: 20px;
+}
+
+.description h3 {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 450px) {
+    .formcontainer {
+        max-width: 100%;
+        margin: 0 30px;
+    }
+
+    .description {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    li {
+        margin-left: 7px;
+        margin-right: 0;
+
+    }
+
+    nav ul,
+    li {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .formcontainer {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+input[type="submit"]:active {
+    background-color: #2a757b;
+
+}
